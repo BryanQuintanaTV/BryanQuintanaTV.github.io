@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: 'Indie Flower', cursive;
+    src: url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+  }
+  
+  h1,p,th,td {
+    font-family: 'Indie Flower', cursive;
+    font-size: 150%;
+  }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>App Series</title>
+  </head>
+
+<body style="background-color:rgb(175, 175, 175);">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 1000;">
+        <div class="container-fluid">
+          <a class="navbar-brand"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+            <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+          </svg> Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                  <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                </svg> Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="hawaii.html"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-person-badge" viewBox="0 0 16 16">
+                    <path d="M6.5 2a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zM11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path d="M4.5 0A2.5 2.5 0 0 0 2 2.5V14a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2.5A2.5 2.5 0 0 0 11.5 0h-7zM3 2.5A1.5 1.5 0 0 1 4.5 1h7A1.5 1.5 0 0 1 13 2.5v10.795a4.2 4.2 0 0 0-.776-.492C11.392 12.387 10.063 12 8 12s-3.392.387-4.224.803a4.2 4.2 0 0 0-.776.492V2.5z"/>
+                  </svg> Hawaii Five-0</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stranger.html"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
+                    <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
+                    <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                    <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg> Stranger Things</a>
+              </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Finish the navbar -->
+<!-- Code Here -->
+    <main class="container max-width-medium">
+        <br><br><br>
+        <h1 class="text-center">Stranger Things</h1> 
+        <div class="d-flex flex-column ju align-items-center">     
+            <div class="col-md">
+                <img src="https://images.justwatch.com/poster/28436315/s592/season-2.webp" class="rounded img-fluid jus" alt="Cinque Terre">
+            </div>
+            <div class="col-md-12 text-justify text-white" style="background-color:rgb(49, 45, 46);"> <p>
+                Cuando un niño desaparece, su madre, un jefe de policía y sus amigos deben enfrentarse a 
+                terribles fuerzas sobrenaturales para recuperarlo. </p>
+            </div>
+        </div>
+    </main>
+     <br>
+    <div class="container col-md">
+        <table class="table">
+        <thead class="thead-dark bg-dark">
+          <tr class="text-white">
+            <th>Información</th>
+            <th>Información</th>
+          </tr>
+        </thead>
+        <tbody class="">
+          <tr>
+            <td>Temporadas</td>
+            <td>3 Temporadas (4ta en proceso)</td>
+          </tr>
+          <tr>
+            <td>Año</td>
+            <td>2016-activa</td>
+          </tr>
+          <tr>
+            <td>IMDb rating</td>
+            <td>8.7</td>
+          </tr>
+          <tr>
+              <td>Creadores</td>
+              <td>Matt Duffer | Ross Duffer </td>
+          </tr>
+          <tr>
+            <td>Generos</td>
+            <td>Drama | Fantasía | Horror | Misterio | Sci-Fi | Thriller</td>
+        </tr>
+        <tr>
+            <td>Clasificación</td>
+            <td class="text-danger">TV-14</td>
+        </tr>
+        <tr>
+            <td>Fecha de Lanzamiento</td>
+            <td>15 Julio, 2016 (México)</td>
+        </tr>
+        <tr>
+            <td>País de origen</td>
+            <td>Estados Unidos</td>
+        </tr>
+        <tr>
+            <td>Idioma Original</td>
+            <td>Inglés</td>
+        </tr>
+        </tbody>
+      </table>
+  </div>
+  <div class="container col-md">
+    <table class="table">
+    <thead class="thead-dark bg-dark">
+      <tr class="text-white">
+        <th>Personajes</th>
+      </tr>
+    </thead>
+    <tbody class="text-center">
+      <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BMjkzMDIxODctNWFlZC00ZTdiLWJmOTMtNjc3NTI5ZDM4NmZmXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_FMjpg_UY400_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Millie Bobby Brown <br> <p class="text-primary"> Eleven </p> </td>
+      </tr>
+      <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BYjM2NmFiNGYtODQ1OC00ZTE5LTg4ZWYtYjFmODk4YmUyZDMzXkEyXkFqcGdeQXVyNjQ3NDAwOTA@._V1_UY317_CR20,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Finn Wolfhard <br> <p class="text-primary"> Mike Wheeler</p> </td>
+      </tr>
+      <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BZThjNDgzMTUtZTM5Yi00ZTgwLWEyMWMtOGRiYjg3NWRmMGMyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX214_CR0,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Noah Schnapp <br> <p class="text-primary"> Will Byers</p> </td>
+      </tr>
+      <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BMTQ3NzM3MTc2NF5BMl5BanBnXkFtZTcwODMxNjA0NA@@._V1_UY317_CR9,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Winona Ryder <br> <p class="text-primary"> Joyce Byers </p> </td>
+      </tr>
+      <tr></tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BZTc5ODUzMDAtZGFhZS00NmExLTlhYWYtZDY0NGI2MGMwYTIzXkEyXkFqcGdeQXVyODY0MzQyODc@._V1_UY317_CR20,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> David Harbour <br> <p class="text-primary"> Jim Hopper</p> </td>
+      </tr>
+      <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BNTkyNDIyMzQ5OF5BMl5BanBnXkFtZTgwNDUwMDM2NDM@._V1_UX214_CR0,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Gaten Matarazzo <br> <p class="text-primary"> Dustin Henderson </p> </td>
+    </tr>
+    <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BOTY2NDY0NDgwNF5BMl5BanBnXkFtZTgwNTE3NTUzNjM@._V1_UX214_CR0,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Caleb McLaughlin <br> <p class="text-primary"> Lucas Sinclair</p> </td>
+    </tr>
+    <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BOTIxMzc4NjI5NF5BMl5BanBnXkFtZTgwNjQ0NTUzNjM@._V1_UY317_CR131,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Natalia Dyer <br> <p class="text-primary"> Nancy Wheeler</p> </td>
+    </tr>
+    <tr>
+        <td><img src="https://m.media-amazon.com/images/M/MV5BMjgzNjJiMjgtMzllZS00NGRjLTgyOWEtYzVhNzgxODE0ZDA3XkEyXkFqcGdeQXVyNTU0OTE5MjA@._V1_UX214_CR0,0,214,317_AL_.jpg" class="img-fluid mx-auto d-block max-width-50%" alt="Cinque Terre"> Sadie Sink <br> <p class="text-primary"> Max Mayfield</p> </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<br><br><br><br><br>
+<!-- Finish code Here -->
+ <footer class="footer mt-auto py-3 bg-dark text-white" style="position:fixed; left:0px; bottom:0px; height:90px; width:100%;">
+      <div class="d-flex flex-row justify-content-around">
+        <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-info-square" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+          <path d="M8.93 6.588l-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg> Quintana Juarez Bryan Alexis</div>
+        <div class="p-2"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-bookmarks" viewBox="0 0 16 16">
+          <path d="M2 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v11.5a.5.5 0 0 1-.777.416L7 13.101l-4.223 2.815A.5.5 0 0 1 2 15.5V4zm2-1a1 1 0 0 0-1 1v10.566l3.723-2.482a.5.5 0 0 1 .554 0L11 14.566V4a1 1 0 0 0-1-1H4z"/>
+          <path d="M4.268 1H12a1 1 0 0 1 1 1v11.768l.223.148A.5.5 0 0 0 14 13.5V2a2 2 0 0 0-2-2H6a2 2 0 0 0-1.732 1z"/>
+        </svg> 6.-G</div>
+      </div>
+      <div class="d-flex flex-row justify-content-center">
+        <span class="text-muted">© Copyright 2021 -BryanQuintana. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+          <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375v2.725z"/>
+          <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"/>
+        </svg></span>
+      </div>
+    </footer>
+    
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+   </body>
+</html>
