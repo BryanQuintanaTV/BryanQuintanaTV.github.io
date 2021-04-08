@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="netflix.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <link rel="stylesheet" href="serie.css"/>
+  <link rel="stylesheet" type="text/css" href="lightslider.css"/>
+  <!--Jquery-->
+  <script type="text/javascript" src="JQuery3.3.1.js"></script>
+  <script type="text/javascript" src="lightslider.js"></script>
+  <title>Document</title>
+</head>
+<body class="bg-dark">
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" style="position: fixed;width: 100%; z-index: 1000;">
+  <div class="container-fluid">
+    <a class="nav-link text-white" href="#">TV Shows</a>
+    <a class="nav-link text-white" href="#">Movies</a>
+    <a class="nav-link text-white" href="#">My List</a>
+  </div>
+</nav>
+<br><br><br>
+<!-- Navbar end -->
+
+<img class="start-fondo" src="https://www.themoviedb.org/t/p/original/yJJo0ESgFT2L0lYNXntbCwWQ3xO.jpg" alt="">
+<p class="start-list"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg></p>
+<button type="button" class="btn btn-light play start-play"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+  <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+</svg> Play</button>
+<p></p>
+
+<br><br><br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog text-white">
+    <div class="modal-content bg-dark">
+      <div class="modal-body">
+        <button type="button" class="btn-close cerrar" data-bs-dismiss="modal" aria-label="Close"></button>
+        <img src="https://www.themoviedb.org/t/p/original/n6UNHZoiYj81abwmG38HbNjflDx.jpg" alt="">
+        <p class="titulo fw-bold">Snowpiercer</p>
+        <p class="informacion text-secondary">2021 TV-MA  2 seasons</p>
+        <p class="descripcion">Earth has frozen over and the last surviving human live on a gigant train circling the globe, struggling to coexist amid the delicate balance onboard</p>
+        <button type="button" class="btn btn-light play">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+          <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+        </svg>      Play         </button>
+        <p class="descarga text-white"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+          <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
+          <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+        </svg></p> <p class="descarga-text">Download</p>
+
+        <p class="trailer">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+            <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"/>
+          </svg>
+        </p> <p class="trailer-text">trailer</p>
+      </div>
+      <br><br>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary bg-dark text-white border border-dark" data-bs-dismiss="modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+          </svg>
+          Episodes & Info                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+
+<!-- Series  -->
+<div class="container">
+  <!--slider------------------->
+  <ul id="autoWidth" class="cs-hidden">
+  <!--1------------------------------>
+<li class="item-a">
+  <!--slider-box-->
+<a href="" class="box" style="background-image: url(https://www.themoviedb.org/t/p/original/3miRCkhzrtp8yhwxWjidjMRspOo.jpg);">
+  <p class="marvel">MARVEL</p>
+    </a>
+  </li>
+  <!--2------------------------------>
+<li class="item-a">
+  <!--slider-box-->
+  <a href="" class="box" style="background-image: url(https://www.themoviedb.org/t/p/original/53P8oHo9cfOsgb1cLxBi4pFY0ja.jpg);">
+  <p class="marvel">MARVEL</p>
+  
+  </a>
+  </li>
+  <!--3------------------------------>
+<li class="item-a">
+  <!--slider-box-->
+    <a href="" class="box" style="background-image: url(https://www.themoviedb.org/t/p/original/fQ40gmFM4p03tXwMxQQKh2cCBW4.jpg);">
+  <p class="marvel">MARVEL</p>
+  
+  </a>
+  </li>
+  <!--4------------------------------>
+<li class="item-a">
+  <!--slider-box-->
+    <a href="" class="box" style="background-image: url(https://www.themoviedb.org/t/p/original/x9FrNr3KcLKsTVqzitIDFwxq48l.jpg);"> 
+  <p class="marvel">MARVEL</p>
+  
+  </a>
+  </li>
+  <!--5------------------------------>
+<li class="item-a">
+  <!--slider-box-->
+   <a href="" class="box" style="background-image: url(https://www.themoviedb.org/t/p/original/8UlWHLMpgZm9bx6QYh0NFoq67TZ.jpg);">
+  <p class="marvel">MARVEL</p>
+  
+   </a>
+  </li>
+  <!--6------------------------------>
+<li class="item-a">
+  <!--slider-box-->
+    <a href="" class="box" style="background-image: url(https://www.themoviedb.org/t/p/original/d5nEamIf6tkps8rXVRRrFzgVaON.jpg);">
+  <p class="marvel">MARVEL</p>
+  
+  </a>
+  </li>
+  </ul>
+    
+    
+
+
+</div>
+<!-- Series  -->
+<br><br><br><br>
+<!-- Footer start -->
+<footer class="footer mt-auto py-3 bg-dark text-white"  style="position:fixed; left:0px; bottom:0px; height:75px; width:100%;">
+  <div class="container d-flex flex-row justify-content-between">
+    <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+      <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+    </svg><br><p>Home</p></div>
+
+    <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+      <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437z"/>
+    </svg><br><p>Coming Soon</p></div>
+
+    <div><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+    </svg><br><p>Download</p></div>
+  </div>
+</footer>
+<!-- Footer end -->
+<script src="script.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</body>
+</html>
