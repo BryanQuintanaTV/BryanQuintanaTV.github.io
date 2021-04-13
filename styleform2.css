@@ -1,0 +1,40 @@
+html{
+    overflow-y: hidden;
+}
+body {
+    margin: 0;
+    background: #5f2c82;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Inter', sans-serif;
+  }
+.card {
+    top: 40px;
+    left: auto;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+
+    /* other styles */
+	background: rgba(252, 103, 103, 0.562);
+	-webkit-backdrop-filter: blur();
+	backdrop-filter: blur(1px);
+  }
+.card-title {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+p{
+    font-size: 1rem;
+    text-align: center;
+  }
+.shape {
+    position: absolute;
+    width: 150px;
+    top: 4rem;
+    left: .5rem;
+  }
