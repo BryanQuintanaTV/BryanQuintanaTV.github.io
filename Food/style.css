@@ -131,17 +131,11 @@ div.food_tile.active img
     margin-bottom: 12px;
 }
 
-.food_detail
-{
-    font-size: 10px;
-    color: rgba(38, 29, 86, 0.4);
-    margin-bottom: 15px;   
-}
 
 #food_meta
 {
     margin: 0;
-    padding: 0;
+    padding: 50;
 }
 
 #food_meta li
@@ -150,14 +144,14 @@ div.food_tile.active img
     float: left;
     width: 50%;
     margin-bottom: 25px;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 500;
     color: rgba(38, 29, 86, 1);
 }
 
 #food_meta li span
 {
-    font-size: 12px;
+    font-size: 30px;
     font-weight: 500;
     color: rgba(38, 29, 86, 0.5);   
 }
